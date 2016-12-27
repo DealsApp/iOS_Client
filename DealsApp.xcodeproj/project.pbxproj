@@ -1,0 +1,1151 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D19C3641DACB85500897089 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D19C3621DACB85500897089 /* Interface.storyboard */; };
+		6D19C3661DACB85500897089 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D19C3651DACB85500897089 /* Assets.xcassets */; };
+		6D19C36D1DACB85500897089 /* WatchApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6D19C36C1DACB85500897089 /* WatchApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6D19C3741DACB85500897089 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D19C3731DACB85500897089 /* InterfaceController.swift */; };
+		6D19C3761DACB85500897089 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D19C3751DACB85500897089 /* ExtensionDelegate.swift */; };
+		6D19C3781DACB85500897089 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D19C3771DACB85500897089 /* NotificationController.swift */; };
+		6D19C37A1DACB85500897089 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D19C3791DACB85500897089 /* Assets.xcassets */; };
+		6D19C37E1DACB85500897089 /* WatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6D19C3601DACB85400897089 /* WatchApp.app */; };
+		6D303C951DA557D500B42BED /* PaymentSucessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D303C941DA557D500B42BED /* PaymentSucessViewController.swift */; };
+		6D579D3E1D8F8067003EE54C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D579D3D1D8F8067003EE54C /* AppDelegate.swift */; };
+		6D579D431D8F8067003EE54C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D579D411D8F8067003EE54C /* Main.storyboard */; };
+		6D579D461D8F8067003EE54C /* DealsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6D579D441D8F8067003EE54C /* DealsApp.xcdatamodeld */; };
+		6D579D4B1D8F8067003EE54C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D579D491D8F8067003EE54C /* LaunchScreen.storyboard */; };
+		6D579D561D8F8067003EE54C /* DealsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D579D551D8F8067003EE54C /* DealsAppTests.swift */; };
+		6D579D611D8F8067003EE54C /* DealsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D579D601D8F8067003EE54C /* DealsAppUITests.swift */; };
+		6D579D731D8F82E8003EE54C /* DealList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D579D721D8F82E8003EE54C /* DealList.swift */; };
+		6D579D751D8F8333003EE54C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D579D741D8F8333003EE54C /* DataManager.swift */; };
+		6D579D771D8F83A1003EE54C /* sjdeals.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D579D761D8F83A1003EE54C /* sjdeals.json */; };
+		6D579D791D90B0B0003EE54C /* DealListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D579D781D90B0B0003EE54C /* DealListController.swift */; };
+		6D579D7B1D91130F003EE54C /* DealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D579D7A1D91130F003EE54C /* DealCell.swift */; };
+		6D9EFD6D1DF0CC2100FC6A46 /* PaymentFailureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9EFD6C1DF0CC2100FC6A46 /* PaymentFailureViewController.swift */; };
+		6DF5E2A81D921A410038C450 /* DealDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF5E2A71D921A410038C450 /* DealDetailController.swift */; };
+		6DFF89681D93336A0085C42E /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DFF89671D93336A0085C42E /* Map.storyboard */; };
+		6DFF896A1D9334CC0085C42E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF89691D9334CC0085C42E /* MapViewController.swift */; };
+		6DFF896C1D94689D0085C42E /* NearbyDealListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF896B1D94689D0085C42E /* NearbyDealListController.swift */; };
+		6DFF896E1D9489CC0085C42E /* NearbyDealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF896D1D9489CC0085C42E /* NearbyDealCell.swift */; };
+		6DFF89721D9492D20085C42E /* NearbyDealDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF89711D9492D20085C42E /* NearbyDealDetailController.swift */; };
+		6DFF89741D99AB800085C42E /* CategoryDealListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF89731D99AB800085C42E /* CategoryDealListController.swift */; };
+		6DFF89761D9C6DE20085C42E /* CategoryDealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF89751D9C6DE20085C42E /* CategoryDealCell.swift */; };
+		6DFF89781D9CE16B0085C42E /* CategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF89771D9CE16B0085C42E /* CategoryController.swift */; };
+		6DFF897A1D9D96430085C42E /* CategoryDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF89791D9D96430085C42E /* CategoryDetailController.swift */; };
+		6DFF897C1D9DD2450085C42E /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF897B1D9DD2450085C42E /* CategoryCell.swift */; };
+		6DFF897E1D9F3B140085C42E /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF897D1D9F3B140085C42E /* SearchResultsController.swift */; };
+		6DFF89801DA1D1DD0085C42E /* Payment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DFF897F1DA1D1DD0085C42E /* Payment.storyboard */; };
+		6DFF89821DA1D3230085C42E /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF89811DA1D3230085C42E /* PaymentViewController.swift */; };
+		6E12E5819DEBAB1357A34570 /* Pods_DealsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2864D1562CF75F3F8F33E944 /* Pods_DealsApp.framework */; };
+		84A74CB26F8286D6C0AEC302 /* Pods_DealsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59A6320E421C6442AF4D269 /* Pods_DealsAppTests.framework */; };
+		9390C7B08E883AE541B39933 /* Pods_DealsAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAF281E33356FE0232CB0B6 /* Pods_DealsAppUITests.framework */; };
+		E54D4D901DE27410006EB293 /* validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54D4D8F1DE27410006EB293 /* validation.swift */; };
+		E556C56C1DE808BE006557F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E556C56B1DE808BE006557F2 /* Assets.xcassets */; };
+		E56024E11DBD96F500E8C59B /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56024E01DBD96F500E8C59B /* RegistrationController.swift */; };
+		E5A3358A1DBC44630071441F /* WelcomeHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A335891DBC44630071441F /* WelcomeHomeController.swift */; };
+		E5A3358C1DBC7C170071441F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5A3358B1DBC7C170071441F /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D19C36E1DACB85500897089 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D579D321D8F8066003EE54C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D19C36B1DACB85500897089;
+			remoteInfo = "WatchApp Extension";
+		};
+		6D19C37C1DACB85500897089 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D579D321D8F8066003EE54C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D19C35F1DACB85400897089;
+			remoteInfo = WatchApp;
+		};
+		6D579D521D8F8067003EE54C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D579D321D8F8066003EE54C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D579D391D8F8066003EE54C;
+			remoteInfo = DealsApp;
+		};
+		6D579D5D1D8F8067003EE54C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D579D321D8F8066003EE54C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D579D391D8F8066003EE54C;
+			remoteInfo = DealsApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6D19C3841DACB85500897089 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6D19C36D1DACB85500897089 /* WatchApp Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D19C3861DACB85500897089 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				6D19C37E1DACB85500897089 /* WatchApp.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		150DC3B107D61B22EF204344 /* Pods-DealsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DealsAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DealsAppTests/Pods-DealsAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		19F6A4C66C5AAD877E2E3379 /* Pods-DealsAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DealsAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DealsAppUITests/Pods-DealsAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2864D1562CF75F3F8F33E944 /* Pods_DealsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DealsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29ABAACB19B49C99C3411D15 /* Pods-DealsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DealsApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DealsApp/Pods-DealsApp.release.xcconfig"; sourceTree = "<group>"; };
+		42D95AD10C3CACBE5A8A9524 /* Pods-DealsAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DealsAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DealsAppUITests/Pods-DealsAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6D19C3601DACB85400897089 /* WatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D19C3631DACB85500897089 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		6D19C3651DACB85500897089 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D19C3671DACB85500897089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D19C36C1DACB85500897089 /* WatchApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D19C3721DACB85500897089 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		6D19C3731DACB85500897089 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		6D19C3751DACB85500897089 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		6D19C3771DACB85500897089 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		6D19C3791DACB85500897089 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D19C37B1DACB85500897089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D303C941DA557D500B42BED /* PaymentSucessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentSucessViewController.swift; sourceTree = "<group>"; };
+		6D579D3A1D8F8066003EE54C /* DealsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DealsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D579D3D1D8F8067003EE54C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6D579D421D8F8067003EE54C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6D579D451D8F8067003EE54C /* DealsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DealsApp.xcdatamodel; sourceTree = "<group>"; };
+		6D579D4A1D8F8067003EE54C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6D579D4C1D8F8067003EE54C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D579D511D8F8067003EE54C /* DealsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DealsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D579D551D8F8067003EE54C /* DealsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsAppTests.swift; sourceTree = "<group>"; };
+		6D579D571D8F8067003EE54C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D579D5C1D8F8067003EE54C /* DealsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DealsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D579D601D8F8067003EE54C /* DealsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsAppUITests.swift; sourceTree = "<group>"; };
+		6D579D621D8F8067003EE54C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D579D721D8F82E8003EE54C /* DealList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealList.swift; sourceTree = "<group>"; };
+		6D579D741D8F8333003EE54C /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		6D579D761D8F83A1003EE54C /* sjdeals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sjdeals.json; sourceTree = "<group>"; };
+		6D579D781D90B0B0003EE54C /* DealListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealListController.swift; sourceTree = "<group>"; };
+		6D579D7A1D91130F003EE54C /* DealCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealCell.swift; sourceTree = "<group>"; };
+		6D9EFD6C1DF0CC2100FC6A46 /* PaymentFailureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentFailureViewController.swift; sourceTree = "<group>"; };
+		6DF5E2A71D921A410038C450 /* DealDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealDetailController.swift; sourceTree = "<group>"; };
+		6DFF89671D93336A0085C42E /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		6DFF89691D9334CC0085C42E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		6DFF896B1D94689D0085C42E /* NearbyDealListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyDealListController.swift; sourceTree = "<group>"; };
+		6DFF896D1D9489CC0085C42E /* NearbyDealCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyDealCell.swift; sourceTree = "<group>"; };
+		6DFF89711D9492D20085C42E /* NearbyDealDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyDealDetailController.swift; sourceTree = "<group>"; };
+		6DFF89731D99AB800085C42E /* CategoryDealListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryDealListController.swift; sourceTree = "<group>"; };
+		6DFF89751D9C6DE20085C42E /* CategoryDealCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryDealCell.swift; sourceTree = "<group>"; };
+		6DFF89771D9CE16B0085C42E /* CategoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryController.swift; sourceTree = "<group>"; };
+		6DFF89791D9D96430085C42E /* CategoryDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryDetailController.swift; sourceTree = "<group>"; };
+		6DFF897B1D9DD2450085C42E /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		6DFF897D1D9F3B140085C42E /* SearchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
+		6DFF897F1DA1D1DD0085C42E /* Payment.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Payment.storyboard; sourceTree = "<group>"; };
+		6DFF89811DA1D3230085C42E /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		A59A6320E421C6442AF4D269 /* Pods_DealsAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DealsAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAC809C0E7D5F0B454C8A547 /* Pods-DealsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DealsAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DealsAppTests/Pods-DealsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DBAF281E33356FE0232CB0B6 /* Pods_DealsAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DealsAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E54D4D8F1DE27410006EB293 /* validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = validation.swift; sourceTree = "<group>"; };
+		E556C56B1DE808BE006557F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E56024E01DBD96F500E8C59B /* RegistrationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		E5A335891DBC44630071441F /* WelcomeHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeHomeController.swift; sourceTree = "<group>"; };
+		E5A3358B1DBC7C170071441F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E5A335931DBC87E00071441F /* DealsApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DealsApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		EC847175B23A7121252BE3F4 /* Pods-DealsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DealsApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DealsApp/Pods-DealsApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D19C3691DACB85500897089 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D579D371D8F8066003EE54C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E12E5819DEBAB1357A34570 /* Pods_DealsApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D579D4E1D8F8067003EE54C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A74CB26F8286D6C0AEC302 /* Pods_DealsAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D579D591D8F8067003EE54C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9390C7B08E883AE541B39933 /* Pods_DealsAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB97C2AD698DD58DAF6FD38A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4BDCA2AEAFEFB30421E6B9E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC847175B23A7121252BE3F4 /* Pods-DealsApp.debug.xcconfig */,
+				29ABAACB19B49C99C3411D15 /* Pods-DealsApp.release.xcconfig */,
+				DAC809C0E7D5F0B454C8A547 /* Pods-DealsAppTests.debug.xcconfig */,
+				150DC3B107D61B22EF204344 /* Pods-DealsAppTests.release.xcconfig */,
+				19F6A4C66C5AAD877E2E3379 /* Pods-DealsAppUITests.debug.xcconfig */,
+				42D95AD10C3CACBE5A8A9524 /* Pods-DealsAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6D19C3611DACB85500897089 /* WatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				6D19C3621DACB85500897089 /* Interface.storyboard */,
+				6D19C3651DACB85500897089 /* Assets.xcassets */,
+				6D19C3671DACB85500897089 /* Info.plist */,
+			);
+			path = WatchApp;
+			sourceTree = "<group>";
+		};
+		6D19C3701DACB85500897089 /* WatchApp Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6D19C3731DACB85500897089 /* InterfaceController.swift */,
+				6D19C3751DACB85500897089 /* ExtensionDelegate.swift */,
+				6D19C3771DACB85500897089 /* NotificationController.swift */,
+				6D19C3791DACB85500897089 /* Assets.xcassets */,
+				6D19C37B1DACB85500897089 /* Info.plist */,
+				6D19C3711DACB85500897089 /* Supporting Files */,
+			);
+			path = "WatchApp Extension";
+			sourceTree = "<group>";
+		};
+		6D19C3711DACB85500897089 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D19C3721DACB85500897089 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6D579D311D8F8066003EE54C = {
+			isa = PBXGroup;
+			children = (
+				6D579D3C1D8F8067003EE54C /* DealsApp */,
+				6D579D541D8F8067003EE54C /* DealsAppTests */,
+				6D579D5F1D8F8067003EE54C /* DealsAppUITests */,
+				6D19C3611DACB85500897089 /* WatchApp */,
+				6D19C3701DACB85500897089 /* WatchApp Extension */,
+				6D579D3B1D8F8066003EE54C /* Products */,
+				4BDCA2AEAFEFB30421E6B9E3 /* Pods */,
+				7CC5B2A376EF6057513A40B0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6D579D3B1D8F8066003EE54C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D579D3A1D8F8066003EE54C /* DealsApp.app */,
+				6D579D511D8F8067003EE54C /* DealsAppTests.xctest */,
+				6D579D5C1D8F8067003EE54C /* DealsAppUITests.xctest */,
+				6D19C3601DACB85400897089 /* WatchApp.app */,
+				6D19C36C1DACB85500897089 /* WatchApp Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D579D3C1D8F8067003EE54C /* DealsApp */ = {
+			isa = PBXGroup;
+			children = (
+				E54D4D8E1DE273F4006EB293 /* Utilities */,
+				6D579D711D8F82B2003EE54C /* Controllers */,
+				6D579D6F1D8F824E003EE54C /* Views */,
+				6D579D6E1D8F8236003EE54C /* Models */,
+				6D579D3D1D8F8067003EE54C /* AppDelegate.swift */,
+				6DFF89661D9333440085C42E /* Storyboards */,
+				6D579D491D8F8067003EE54C /* LaunchScreen.storyboard */,
+				6D579D4C1D8F8067003EE54C /* Info.plist */,
+				E5A3358B1DBC7C170071441F /* GoogleService-Info.plist */,
+				6D579D441D8F8067003EE54C /* DealsApp.xcdatamodeld */,
+				E5A335931DBC87E00071441F /* DealsApp-Bridging-Header.h */,
+				E556C56B1DE808BE006557F2 /* Assets.xcassets */,
+			);
+			path = DealsApp;
+			sourceTree = "<group>";
+		};
+		6D579D541D8F8067003EE54C /* DealsAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				6D579D551D8F8067003EE54C /* DealsAppTests.swift */,
+				6D579D571D8F8067003EE54C /* Info.plist */,
+			);
+			path = DealsAppTests;
+			sourceTree = "<group>";
+		};
+		6D579D5F1D8F8067003EE54C /* DealsAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6D579D601D8F8067003EE54C /* DealsAppUITests.swift */,
+				6D579D621D8F8067003EE54C /* Info.plist */,
+			);
+			path = DealsAppUITests;
+			sourceTree = "<group>";
+		};
+		6D579D6E1D8F8236003EE54C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6D579D761D8F83A1003EE54C /* sjdeals.json */,
+				6D579D741D8F8333003EE54C /* DataManager.swift */,
+				6D579D721D8F82E8003EE54C /* DealList.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		6D579D6F1D8F824E003EE54C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6D579D7A1D91130F003EE54C /* DealCell.swift */,
+				6DFF896D1D9489CC0085C42E /* NearbyDealCell.swift */,
+				6DFF89751D9C6DE20085C42E /* CategoryDealCell.swift */,
+				6DFF897B1D9DD2450085C42E /* CategoryCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		6D579D711D8F82B2003EE54C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E5A335881DBC443B0071441F /* Home */,
+				6D579D781D90B0B0003EE54C /* DealListController.swift */,
+				6DF5E2A71D921A410038C450 /* DealDetailController.swift */,
+				6D9EFD6C1DF0CC2100FC6A46 /* PaymentFailureViewController.swift */,
+				6DFF89691D9334CC0085C42E /* MapViewController.swift */,
+				6DFF896B1D94689D0085C42E /* NearbyDealListController.swift */,
+				6DFF89711D9492D20085C42E /* NearbyDealDetailController.swift */,
+				6DFF89731D99AB800085C42E /* CategoryDealListController.swift */,
+				6DFF89791D9D96430085C42E /* CategoryDetailController.swift */,
+				6DFF89771D9CE16B0085C42E /* CategoryController.swift */,
+				6DFF897D1D9F3B140085C42E /* SearchResultsController.swift */,
+				6DFF89811DA1D3230085C42E /* PaymentViewController.swift */,
+				6D303C941DA557D500B42BED /* PaymentSucessViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6DFF89661D9333440085C42E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6D579D411D8F8067003EE54C /* Main.storyboard */,
+				6DFF89671D93336A0085C42E /* Map.storyboard */,
+				6DFF897F1DA1D1DD0085C42E /* Payment.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		7CC5B2A376EF6057513A40B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2864D1562CF75F3F8F33E944 /* Pods_DealsApp.framework */,
+				A59A6320E421C6442AF4D269 /* Pods_DealsAppTests.framework */,
+				DBAF281E33356FE0232CB0B6 /* Pods_DealsAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E54D4D8E1DE273F4006EB293 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E54D4D8F1DE27410006EB293 /* validation.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		E5A335881DBC443B0071441F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E5A335891DBC44630071441F /* WelcomeHomeController.swift */,
+				E56024E01DBD96F500E8C59B /* RegistrationController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D19C35F1DACB85400897089 /* WatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D19C3851DACB85500897089 /* Build configuration list for PBXNativeTarget "WatchApp" */;
+			buildPhases = (
+				6D19C35E1DACB85400897089 /* Resources */,
+				6D19C3841DACB85500897089 /* Embed App Extensions */,
+				DB97C2AD698DD58DAF6FD38A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D19C36F1DACB85500897089 /* PBXTargetDependency */,
+			);
+			name = WatchApp;
+			productName = WatchApp;
+			productReference = 6D19C3601DACB85400897089 /* WatchApp.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		6D19C36B1DACB85500897089 /* WatchApp Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D19C3831DACB85500897089 /* Build configuration list for PBXNativeTarget "WatchApp Extension" */;
+			buildPhases = (
+				6D19C3681DACB85500897089 /* Sources */,
+				6D19C3691DACB85500897089 /* Frameworks */,
+				6D19C36A1DACB85500897089 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchApp Extension";
+			productName = "WatchApp Extension";
+			productReference = 6D19C36C1DACB85500897089 /* WatchApp Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		6D579D391D8F8066003EE54C /* DealsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D579D651D8F8067003EE54C /* Build configuration list for PBXNativeTarget "DealsApp" */;
+			buildPhases = (
+				A81F530111CD5D2A0C9B49F0 /* [CP] Check Pods Manifest.lock */,
+				6D579D361D8F8066003EE54C /* Sources */,
+				6D579D371D8F8066003EE54C /* Frameworks */,
+				6D579D381D8F8066003EE54C /* Resources */,
+				BD0E3055C357744F28B75B6E /* [CP] Embed Pods Frameworks */,
+				6C3B837C9AF6DCE0ABAFDF30 /* [CP] Copy Pods Resources */,
+				6D19C3861DACB85500897089 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D19C37D1DACB85500897089 /* PBXTargetDependency */,
+			);
+			name = DealsApp;
+			productName = DealsApp;
+			productReference = 6D579D3A1D8F8066003EE54C /* DealsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6D579D501D8F8067003EE54C /* DealsAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D579D681D8F8067003EE54C /* Build configuration list for PBXNativeTarget "DealsAppTests" */;
+			buildPhases = (
+				0031786451145E3D8889195A /* [CP] Check Pods Manifest.lock */,
+				6D579D4D1D8F8067003EE54C /* Sources */,
+				6D579D4E1D8F8067003EE54C /* Frameworks */,
+				6D579D4F1D8F8067003EE54C /* Resources */,
+				166405ADF1D1871571AF199C /* [CP] Embed Pods Frameworks */,
+				D66AFD7A80359604644E8530 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D579D531D8F8067003EE54C /* PBXTargetDependency */,
+			);
+			name = DealsAppTests;
+			productName = DealsAppTests;
+			productReference = 6D579D511D8F8067003EE54C /* DealsAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6D579D5B1D8F8067003EE54C /* DealsAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D579D6B1D8F8067003EE54C /* Build configuration list for PBXNativeTarget "DealsAppUITests" */;
+			buildPhases = (
+				B27656BE3A72E478712B71B4 /* [CP] Check Pods Manifest.lock */,
+				6D579D581D8F8067003EE54C /* Sources */,
+				6D579D591D8F8067003EE54C /* Frameworks */,
+				6D579D5A1D8F8067003EE54C /* Resources */,
+				64682BFAFDBE253995553E51 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D579D5E1D8F8067003EE54C /* PBXTargetDependency */,
+			);
+			name = DealsAppUITests;
+			productName = DealsAppUITests;
+			productReference = 6D579D5C1D8F8067003EE54C /* DealsAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D579D321D8F8066003EE54C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Chen, David";
+				TargetAttributes = {
+					6D19C35F1DACB85400897089 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 4HBLY2542Z;
+					};
+					6D19C36B1DACB85500897089 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 4HBLY2542Z;
+					};
+					6D579D391D8F8066003EE54C = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 4HBLY2542Z;
+					};
+					6D579D501D8F8067003EE54C = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 4HBLY2542Z;
+						TestTargetID = 6D579D391D8F8066003EE54C;
+					};
+					6D579D5B1D8F8067003EE54C = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 4HBLY2542Z;
+						TestTargetID = 6D579D391D8F8066003EE54C;
+					};
+				};
+			};
+			buildConfigurationList = 6D579D351D8F8066003EE54C /* Build configuration list for PBXProject "DealsApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D579D311D8F8066003EE54C;
+			productRefGroup = 6D579D3B1D8F8066003EE54C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D579D391D8F8066003EE54C /* DealsApp */,
+				6D579D501D8F8067003EE54C /* DealsAppTests */,
+				6D579D5B1D8F8067003EE54C /* DealsAppUITests */,
+				6D19C35F1DACB85400897089 /* WatchApp */,
+				6D19C36B1DACB85500897089 /* WatchApp Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D19C35E1DACB85400897089 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D19C3661DACB85500897089 /* Assets.xcassets in Resources */,
+				6D19C3641DACB85500897089 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D19C36A1DACB85500897089 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D19C37A1DACB85500897089 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D579D381D8F8066003EE54C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D579D4B1D8F8067003EE54C /* LaunchScreen.storyboard in Resources */,
+				6DFF89681D93336A0085C42E /* Map.storyboard in Resources */,
+				6DFF89801DA1D1DD0085C42E /* Payment.storyboard in Resources */,
+				6D579D771D8F83A1003EE54C /* sjdeals.json in Resources */,
+				E556C56C1DE808BE006557F2 /* Assets.xcassets in Resources */,
+				6D579D431D8F8067003EE54C /* Main.storyboard in Resources */,
+				E5A3358C1DBC7C170071441F /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D579D4F1D8F8067003EE54C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D579D5A1D8F8067003EE54C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0031786451145E3D8889195A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		166405ADF1D1871571AF199C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DealsAppTests/Pods-DealsAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64682BFAFDBE253995553E51 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DealsAppUITests/Pods-DealsAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C3B837C9AF6DCE0ABAFDF30 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DealsApp/Pods-DealsApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A81F530111CD5D2A0C9B49F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B27656BE3A72E478712B71B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BD0E3055C357744F28B75B6E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DealsApp/Pods-DealsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D66AFD7A80359604644E8530 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DealsAppTests/Pods-DealsAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D19C3681DACB85500897089 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D19C3781DACB85500897089 /* NotificationController.swift in Sources */,
+				6D19C3761DACB85500897089 /* ExtensionDelegate.swift in Sources */,
+				6D19C3741DACB85500897089 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D579D361D8F8066003EE54C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DFF89761D9C6DE20085C42E /* CategoryDealCell.swift in Sources */,
+				6D579D751D8F8333003EE54C /* DataManager.swift in Sources */,
+				6DF5E2A81D921A410038C450 /* DealDetailController.swift in Sources */,
+				6DFF89781D9CE16B0085C42E /* CategoryController.swift in Sources */,
+				6D303C951DA557D500B42BED /* PaymentSucessViewController.swift in Sources */,
+				6DFF89741D99AB800085C42E /* CategoryDealListController.swift in Sources */,
+				6D579D7B1D91130F003EE54C /* DealCell.swift in Sources */,
+				E56024E11DBD96F500E8C59B /* RegistrationController.swift in Sources */,
+				6D9EFD6D1DF0CC2100FC6A46 /* PaymentFailureViewController.swift in Sources */,
+				6DFF896A1D9334CC0085C42E /* MapViewController.swift in Sources */,
+				6DFF89821DA1D3230085C42E /* PaymentViewController.swift in Sources */,
+				6D579D3E1D8F8067003EE54C /* AppDelegate.swift in Sources */,
+				6DFF897A1D9D96430085C42E /* CategoryDetailController.swift in Sources */,
+				6DFF897E1D9F3B140085C42E /* SearchResultsController.swift in Sources */,
+				6DFF89721D9492D20085C42E /* NearbyDealDetailController.swift in Sources */,
+				6D579D791D90B0B0003EE54C /* DealListController.swift in Sources */,
+				6DFF897C1D9DD2450085C42E /* CategoryCell.swift in Sources */,
+				E5A3358A1DBC44630071441F /* WelcomeHomeController.swift in Sources */,
+				6DFF896E1D9489CC0085C42E /* NearbyDealCell.swift in Sources */,
+				E54D4D901DE27410006EB293 /* validation.swift in Sources */,
+				6DFF896C1D94689D0085C42E /* NearbyDealListController.swift in Sources */,
+				6D579D461D8F8067003EE54C /* DealsApp.xcdatamodeld in Sources */,
+				6D579D731D8F82E8003EE54C /* DealList.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D579D4D1D8F8067003EE54C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D579D561D8F8067003EE54C /* DealsAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D579D581D8F8067003EE54C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D579D611D8F8067003EE54C /* DealsAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D19C36F1DACB85500897089 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D19C36B1DACB85500897089 /* WatchApp Extension */;
+			targetProxy = 6D19C36E1DACB85500897089 /* PBXContainerItemProxy */;
+		};
+		6D19C37D1DACB85500897089 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D19C35F1DACB85400897089 /* WatchApp */;
+			targetProxy = 6D19C37C1DACB85500897089 /* PBXContainerItemProxy */;
+		};
+		6D579D531D8F8067003EE54C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D579D391D8F8066003EE54C /* DealsApp */;
+			targetProxy = 6D579D521D8F8067003EE54C /* PBXContainerItemProxy */;
+		};
+		6D579D5E1D8F8067003EE54C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D579D391D8F8066003EE54C /* DealsApp */;
+			targetProxy = 6D579D5D1D8F8067003EE54C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6D19C3621DACB85500897089 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D19C3631DACB85500897089 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		6D579D411D8F8067003EE54C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D579D421D8F8067003EE54C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6D579D491D8F8067003EE54C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D579D4A1D8F8067003EE54C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D19C37F1DACB85500897089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WatchApp_Extension;
+				INFOPLIST_FILE = WatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = CMPE295B.DealsApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		6D19C3801DACB85500897089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WatchApp_Extension;
+				INFOPLIST_FILE = WatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = CMPE295B.DealsApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		6D19C3811DACB85500897089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "WatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CMPE295B.DealsApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		6D19C3821DACB85500897089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "WatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CMPE295B.DealsApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		6D579D631D8F8067003EE54C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6D579D641D8F8067003EE54C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D579D661D8F8067003EE54C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC847175B23A7121252BE3F4 /* Pods-DealsApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DealsApp",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DealsApp",
+				);
+				INFOPLIST_FILE = DealsApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CMPE295B.DealsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DealsApp/DealsApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6D579D671D8F8067003EE54C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29ABAACB19B49C99C3411D15 /* Pods-DealsApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DealsApp",
+				);
+				INFOPLIST_FILE = DealsApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CMPE295B.DealsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DealsApp/DealsApp-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6D579D691D8F8067003EE54C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAC809C0E7D5F0B454C8A547 /* Pods-DealsAppTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DealsAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CMPE295B.DealsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DealsApp.app/DealsApp";
+			};
+			name = Debug;
+		};
+		6D579D6A1D8F8067003EE54C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 150DC3B107D61B22EF204344 /* Pods-DealsAppTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DealsAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CMPE295B.DealsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DealsApp.app/DealsApp";
+			};
+			name = Release;
+		};
+		6D579D6C1D8F8067003EE54C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19F6A4C66C5AAD877E2E3379 /* Pods-DealsAppUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = DealsAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CMPE295B.DealsAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DealsApp;
+			};
+			name = Debug;
+		};
+		6D579D6D1D8F8067003EE54C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42D95AD10C3CACBE5A8A9524 /* Pods-DealsAppUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = DealsAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CMPE295B.DealsAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DealsApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D19C3831DACB85500897089 /* Build configuration list for PBXNativeTarget "WatchApp Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D19C3811DACB85500897089 /* Debug */,
+				6D19C3821DACB85500897089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D19C3851DACB85500897089 /* Build configuration list for PBXNativeTarget "WatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D19C37F1DACB85500897089 /* Debug */,
+				6D19C3801DACB85500897089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D579D351D8F8066003EE54C /* Build configuration list for PBXProject "DealsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D579D631D8F8067003EE54C /* Debug */,
+				6D579D641D8F8067003EE54C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D579D651D8F8067003EE54C /* Build configuration list for PBXNativeTarget "DealsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D579D661D8F8067003EE54C /* Debug */,
+				6D579D671D8F8067003EE54C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D579D681D8F8067003EE54C /* Build configuration list for PBXNativeTarget "DealsAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D579D691D8F8067003EE54C /* Debug */,
+				6D579D6A1D8F8067003EE54C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D579D6B1D8F8067003EE54C /* Build configuration list for PBXNativeTarget "DealsAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D579D6C1D8F8067003EE54C /* Debug */,
+				6D579D6D1D8F8067003EE54C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6D579D441D8F8067003EE54C /* DealsApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6D579D451D8F8067003EE54C /* DealsApp.xcdatamodel */,
+			);
+			currentVersion = 6D579D451D8F8067003EE54C /* DealsApp.xcdatamodel */;
+			path = DealsApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6D579D321D8F8066003EE54C /* Project object */;
+}
