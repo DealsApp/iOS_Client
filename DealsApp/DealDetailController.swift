@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import MapKit
 import Braintree
+import BraintreeDropIn
 
 class DealDetailController: UIViewController, BTDropInViewControllerDelegate {
     var braintreeClient: BTAPIClient?
@@ -21,7 +22,8 @@ class DealDetailController: UIViewController, BTDropInViewControllerDelegate {
     @IBOutlet weak var priceValue: UILabel!
     
     @IBAction func redeem(sender: UIButton!) {
-        let clientTokenURL = NSURL(string: "http://glutenlovers.net/V.ZeroPHPServer/server.php")!
+        let clientTokenURL = NSURL(string: "http://aqueous-taiga-51771.herokuapp.com/V.ZeroPHPServer/iOSDropInServer.php")!
+//        let clientTokenURL = NSURL(string: "http://aqueous-taiga-51771.herokuapp.com/V.ZeroPHPServer/server.php")!
         let clientTokenRequest = NSMutableURLRequest(URL: clientTokenURL)
         clientTokenRequest.setValue("text/plain", forHTTPHeaderField: "Accept")
         
@@ -34,11 +36,15 @@ class DealDetailController: UIViewController, BTDropInViewControllerDelegate {
             // As an example, you may wish to present our Drop-in UI at this point.
             // Continue to the next section to learn more...
             
-            dispatch_async(dispatch_get_main_queue(), {
-                self.tappedMyPayButton()
+//            dispatch_async(dispatch_get_main_queue(), {
+//                self.tappedMyPayButton()
+//            })
+
+            dispatch_async(dispatch_get_main_queue(), {   //For BT DropIn only.
+                self.showDropIn(clientToken!)
             })
-            
-            }.resume()
+        }.resume()
+        
 
         print ("deal_id: \(deal["_id"]!)")
         let dealUrlID = NSURL(string: "http://smat-server.herokuapp.com/deals/redeem/\(deal["_id"]!)")!
@@ -69,7 +75,31 @@ class DealDetailController: UIViewController, BTDropInViewControllerDelegate {
         priceValue.text = deal["dealPrice"]?.stringValue
 //        print("Price is: \(deal["dealPrice"])")
     }
-    
+//For BTDropIn only
+    func showDropIn(clientTokenOrTokenizationKey: String) {
+        let request =  BTDropInRequest()
+        request.amount = deal["dealPrice"]?.stringValue as? String!
+        let dropIn = BTDropInController(authorization: clientTokenOrTokenizationKey, request: request)
+        { (controller, result, error) in
+            if (error != nil) {
+                print("ERROR")
+            } else if (result?.cancelled == true) {
+                print("CANCELLED")
+            } else if let result = result {
+                // Use the BTDropInResult properties to update your UI
+                // result.paymentOptionType
+                // result.paymentMethod
+                // result.paymentIcon
+                // result.paymentDescription
+                let nonce = result.paymentMethod?.nonce
+                var amount = self.deal["dealPrice"]?.stringValue as? String!
+                self.postTransactionToServer(nonce!, amount: amount!)
+            }
+            controller.dismissViewControllerAnimated(true, completion: nil)
+        }
+        self.presentViewController(dropIn!, animated: true, completion: nil)
+    }
+
     func dropInViewController(viewController: BTDropInViewController,
                               didSucceedWithTokenization paymentMethodNonce: BTPaymentMethodNonce)
     {
@@ -87,7 +117,8 @@ class DealDetailController: UIViewController, BTDropInViewControllerDelegate {
     }
     
     func postTransactionToServer(paymentMethodNonce: String, amount: String) {
-        let paymentURL = NSURL(string: "http://glutenlovers.net/V.ZeroPHPServer/server.php")!
+        let paymentURL = NSURL(string: "http://aqueous-taiga-51771.herokuapp.com/V.ZeroPHPServer/iOSDropInServer.php")!
+//        let paymentURL = NSURL(string: "http://aqueous-taiga-51771.herokuapp.com/V.ZeroPHPServer/server.php")!
         let request = NSMutableURLRequest(URL: paymentURL)
         request.HTTPBody = "payment_method_nonce=\(paymentMethodNonce)&amount=\(amount)".dataUsingEncoding(NSUTF8StringEncoding)
         request.HTTPMethod = "POST"

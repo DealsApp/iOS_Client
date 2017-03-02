@@ -22,7 +22,7 @@ class NearbyDealDetailController: UIViewController, BTDropInViewControllerDelega
     @IBOutlet weak var detailDescription: UILabel!
     
     @IBAction func redeem(sender: UIButton!) {
-        let clientTokenURL = NSURL(string: "http://glutenlovers.net/V.ZeroPHPServer/server.php")!
+        let clientTokenURL = NSURL(string: "https://aqueous-taiga-51771.herokuapp.com/V.ZeroPHPServer/server.php")!
         let clientTokenRequest = NSMutableURLRequest(URL: clientTokenURL)
         clientTokenRequest.setValue("text/plain", forHTTPHeaderField: "Accept")
         
@@ -85,7 +85,7 @@ class NearbyDealDetailController: UIViewController, BTDropInViewControllerDelega
     }
     
     func postTransactionToServer(paymentMethodNonce: String, amount: String) {
-        let paymentURL = NSURL(string: "http://glutenlovers.net/V.ZeroPHPServer/server.php")!
+        let paymentURL = NSURL(string: "https://aqueous-taiga-51771.herokuapp.com/V.ZeroPHPServer/server.php")!
         let request = NSMutableURLRequest(URL: paymentURL)
         request.HTTPBody = "payment_method_nonce=\(paymentMethodNonce)&amount=\(amount)".dataUsingEncoding(NSUTF8StringEncoding)
         request.HTTPMethod = "POST"

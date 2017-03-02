@@ -10,7 +10,6 @@ import Foundation
 import MapKit
 import UIKit
 import Haneke
-import AlamofireImage
 
 class CategoryController: UITableViewController {
 //    let myDeals = DealList()

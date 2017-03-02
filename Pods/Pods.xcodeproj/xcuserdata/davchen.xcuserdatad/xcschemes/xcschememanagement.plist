@@ -4,16 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Alamofire.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>AlamofireImage.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Bolts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -30,6 +20,16 @@
 			<false/>
 		</dict>
 		<key>Braintree.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>BraintreeDropIn-Braintree-UIKit-Localization.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>BraintreeDropIn.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -87,12 +87,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>05094CC4A047119F7ADC14EE74C4881C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>11BD9F68C2F91F5AF96C10585EAE863A</key>
+		<key>22602A695557BA1BE5B806632F4B9E81</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -112,6 +107,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>64A98D7D0FEE6E029ECBA18310F7CCBF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6C93DE13A9E39F5C57B693BE90DBB2D0</key>
 		<dict>
 			<key>primary</key>
@@ -122,12 +122,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
+		<key>73DAC88F67F0521291BF7F25E97DFB2B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>7D04535608058A2FABC0D16935868FB9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8FC9D5863B3ED2235C3D6373A2D2C2BF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -142,12 +147,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A3840265ED04B85EEAE8F26D28FA9F9B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BF15DE4E17E389ABC373A576A618294C</key>
+		<key>C7688FEBF66669539003C1D3B17DEE8B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -157,12 +157,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EEAB0DDAD9057853359C675889FD06AB</key>
+		<key>E89EE6C6BD2928B86D3139FD4927344C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F3CA6A004BD18BEA9E5502E4089BE94F</key>
+		<key>EEAB0DDAD9057853359C675889FD06AB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

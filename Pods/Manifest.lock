@@ -1,7 +1,4 @@
 PODS:
-  - Alamofire (3.5.1)
-  - AlamofireImage (2.5.0):
-    - Alamofire (~> 3.5)
   - Bolts (1.8.4):
     - Bolts/AppLinks (= 1.8.4)
     - Bolts/Tasks (= 1.8.4)
@@ -30,6 +27,17 @@ PODS:
   - Braintree/UI (4.7.1):
     - Braintree/Card
     - Braintree/Core
+  - Braintree/UnionPay (4.7.1):
+    - Braintree/Card
+    - Braintree/Core
+  - BraintreeDropIn (5.1.0):
+    - BraintreeDropIn/DropIn (= 5.1.0)
+  - BraintreeDropIn/DropIn (5.1.0):
+    - Braintree/Card (~> 4.0)
+    - Braintree/Core (~> 4.0)
+    - Braintree/UnionPay (~> 4.0)
+    - BraintreeDropIn/UIKit
+  - BraintreeDropIn/UIKit (5.1.0)
   - FBSDKCoreKit (4.17.0):
     - Bolts (~> 1.7)
   - FBSDKLoginKit (4.17.0):
@@ -81,9 +89,9 @@ PODS:
   - HanekeSwift (0.10.1)
 
 DEPENDENCIES:
-  - Alamofire
-  - AlamofireImage
   - Braintree
+  - Braintree/PayPal
+  - BraintreeDropIn
   - FBSDKCoreKit
   - FBSDKLoginKit
   - FBSDKShareKit
@@ -91,10 +99,9 @@ DEPENDENCIES:
   - HanekeSwift
 
 SPEC CHECKSUMS:
-  Alamofire: 0dfba1184a543e2aa160f4e39cac4e8aba48d223
-  AlamofireImage: 2d34936e5201270bb17a316a786e90e83b4a249d
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   Braintree: c57bcb7983412530ea6d71cee4b99a4ba316c4ef
+  BraintreeDropIn: ad8e18bd4f3a33105b7bcd418556988ef68272bc
   FBSDKCoreKit: 30a21d2d7b92984b3d80497113433c00824c35e9
   FBSDKLoginKit: 42b7129ac0373ca99eaf4cbebf4d07bd42371f59
   FBSDKShareKit: 9b573d03fbee36cbaf42d5bb1f2bc019e0d72347
@@ -111,6 +118,6 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: a1f8ed39e4fe21c68957daed472c7afbcdf29166
   HanekeSwift: 08e47d3d0f2899ec58e5d257beba0de619aca9e8
 
-PODFILE CHECKSUM: 0cc32a39c78d7d9abdc0c05f25d5920e357fcf5a
+PODFILE CHECKSUM: 3451389a1767d18b18027157952f3eb36832e615
 
 COCOAPODS: 1.0.1

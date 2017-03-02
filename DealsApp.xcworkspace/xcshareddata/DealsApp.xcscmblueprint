@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1999A5275A8D604771BA296F836115C11B9072A6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1999A5275A8D604771BA296F836115C11B9072A6" : 0,
+    "E03884403966FB318FBE51EA2E9ED09BED5B407B" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E9BE1324-14BE-45E4-B923-ECD3102EFBBF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1999A5275A8D604771BA296F836115C11B9072A6" : "DealsApp\/",
+    "E03884403966FB318FBE51EA2E9ED09BED5B407B" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DealsApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DealsApp.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DealsApp\/iOS_Client",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1999A5275A8D604771BA296F836115C11B9072A6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/masters_project\/iosclient.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E03884403966FB318FBE51EA2E9ED09BED5B407B"
+    }
+  ]
+}
